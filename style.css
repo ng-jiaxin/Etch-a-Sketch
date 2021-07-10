@@ -1,0 +1,53 @@
+:root {
+    --title: #333;
+    --background: #ededed;
+    --button-border: #333;
+    --button: #555;
+    --button-hover: #444;
+    --button-active: #333;
+    --border: #222;
+    --grid-cols: 1;
+    --grid-rows: 1;
+    background-color: antiquewhite;
+  }
+
+html{
+    font-family: "Roboto", sans-serif;
+    font-size: 100.5%;
+    line-height: 1;
+}
+
+body h1 {
+    font-size: 2em;
+    line-height: 2;
+}
+
+.btn{
+    transition-duration: 0.5s;
+    width: 100px;
+    border: 2px solid rgb(124, 124, 124);
+}
+
+.btn:hover{
+    background-color:rgb(124, 124, 124);
+    color:white;
+}
+.grid{
+    display: grid;
+    max-width:600px;
+    min-height: 600px;
+    margin: 2rem auto;
+    border: 2px solid;
+}
+  
+#container {
+display: grid;
+grid-gap: 0em;
+grid-template-rows: repeat(var(--grid-rows), 1fr);
+grid-template-columns: repeat(var(--grid-cols), 1fr);
+background-color: white;
+}
+
+.grid-item {
+border: 1px solid;
+}  
